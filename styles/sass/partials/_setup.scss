@@ -248,3 +248,19 @@ template {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+
+// ADD THIS AS A SNIPP
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
