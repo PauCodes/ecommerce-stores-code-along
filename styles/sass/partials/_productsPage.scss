@@ -1,0 +1,43 @@
+.productsMainContent {
+    section {
+        padding: 75px 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    // flex-parent
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            // ADD TO NOTION
+            flex-basis: calc((100% / 3) - 30px);
+            margin: 5px 15px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .popularProduct {
+        font-weight: bold;
+    }
+
+    // IS THERE A BETTER SOLUTION TO UN
+    .discountedPrice {
+        text-decoration: line-through;
+        color: rgba($color: $primary, $alpha: 0.5);
+
+        span {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba($color: $primary, $alpha: 1);
+        }
+    }
+
+}
